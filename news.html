@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>更新公告｜人生不只一條路 LifeHasManyPaths</title>
+<meta name="description" content="《人生不只一條路》（LifeHasManyPaths）全新出發 v1.0 更新公告：新增跨年齡深度故事線「爸爸鋪好的路」、人生章節挑戰、六大主動生活分類、多元職涯與在地時事梗、成就圖鑑與長圖分享。">
+<meta name="keywords" content="人生不只一條路,LifeHasManyPaths,更新公告,改版,台灣人生模擬遊戲,changelog">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#FAF9F5">
+<link rel="canonical" href="https://twcch.github.io/LifeHasManyPaths/news.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏝️%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="人生不只一條路 LifeHasManyPaths">
+<meta property="og:title" content="更新公告｜人生不只一條路 LifeHasManyPaths">
+<meta property="og:description" content="《人生不只一條路》全新出發 v1.0！跨年齡深度故事線「爸爸鋪好的路」、人生章節挑戰、主動生活分類與豐富台灣時事職涯，開網頁就能玩。">
+<meta property="og:url" content="https://twcch.github.io/LifeHasManyPaths/news.html">
+<meta property="og:image" content="https://twcch.github.io/LifeHasManyPaths/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="更新公告｜人生不只一條路 LifeHasManyPaths">
+<meta name="twitter:description" content="《人生不只一條路》全新出發 v1.0！跨年齡深度故事線「爸爸鋪好的路」、人生章節挑戰、主動生活分類與豐富台灣時事職涯，開網頁就能玩。">
+<meta name="twitter:image" content="https://twcch.github.io/LifeHasManyPaths/og-image.png">
+<style>
+  :root{
+    --bg2:#FAF9F5;
+    --surface:#FFFFFF; --surface2:#FAF7F2;
+    --line:#E6DEC2; --line2:#2D2721;
+    --ink:#2D2721; --muted:#7A7267; --faint:#A89F93;
+    --accent:#D97757; --accent2:#477669;
+    --gold:#B86221; --coral:#C94B3F; --good:#2E7D5B;
+    --comic-shadow:0 4px 0 #2D2721;
+    --cjk:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; font-family:var(--cjk); color:var(--ink); line-height:1.7;
+    background-color:var(--bg2);
+    background-image:
+      radial-gradient(#E8DFD3 1.2px, transparent 1.2px),
+      radial-gradient(#E8DFD3 1.2px, var(--bg2) 1.2px);
+    background-size:24px 24px;
+    background-position:0 0, 12px 12px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:760px; margin:0 auto; padding:clamp(18px,4vw,40px) clamp(16px,4vw,28px) 72px;}
+
+  .nav{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:8px;}
+  .back{
+    display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:var(--ink); font-size:13px; font-weight:800;
+    padding:8px 16px; border:2px solid var(--line2); border-radius:999px; background:var(--surface);
+    box-shadow:0 3px 0 var(--line2); transition:transform .08s, box-shadow .08s;
+  }
+  .back:hover{transform:translateY(-1px); box-shadow:0 4px 0 var(--line2);}
+  .back:active{transform:translateY(2px); box-shadow:0 1px 0 var(--line2);}
+  .navmark{font-size:12px; letter-spacing:2px; color:var(--faint); font-family:var(--mono); font-weight:700;}
+
+  .hero{text-align:center; padding:22px 0 8px; opacity:0; animation:rise .6s cubic-bezier(.2,.7,.3,1) forwards;}
+  .eyebrow{font-size:12px; letter-spacing:3px; color:var(--accent); font-weight:800;}
+  .eyebrow .en{color:var(--muted); font-family:var(--mono); letter-spacing:2px;}
+  h1{
+    margin:.28em 0 .12em; font-size:clamp(30px,8vw,46px); font-weight:900; letter-spacing:1.5px; text-wrap:balance;
+    color:var(--ink); text-shadow:1px 2px 0 rgba(217,119,87,.15);
+  }
+  .lede{color:var(--muted); font-size:clamp(14px,3.6vw,16px); margin:0 auto; max-width:34ch; text-wrap:balance; font-weight:500;}
+  .verpill{
+    display:inline-flex; align-items:center; gap:8px; margin-top:16px;
+    font-family:var(--mono); font-size:14px; font-weight:800; letter-spacing:1px;
+    padding:8px 16px; border-radius:999px; color:#FFFFFF; border:2px solid var(--line2);
+    background:linear-gradient(135deg,var(--accent),#C46343); box-shadow:0 4px 0 var(--line2);
+  }
+  .verpill .tag{font-family:var(--cjk); font-size:11px; background:rgba(0,0,0,.15); padding:2px 8px; border-radius:999px;}
+
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:30px 0 8px;
+    opacity:0; animation:rise .6s .12s cubic-bezier(.2,.7,.3,1) forwards;}
+  .stat{
+    background:var(--surface); border:2px solid var(--line2); border-radius:16px; padding:14px 8px; text-align:center;
+    box-shadow:0 3px 0 var(--line2);
+  }
+  .stat b{display:block; font-family:var(--mono); font-size:clamp(20px,5.5vw,27px); font-weight:900; font-variant-numeric:tabular-nums; color:var(--accent); line-height:1.1;}
+  .stat span{display:block; font-size:11px; color:var(--muted); margin-top:5px; letter-spacing:.5px; font-weight:700;}
+  @media(max-width:460px){ .stats{grid-template-columns:repeat(2,1fr);} }
+
+  .timeline{margin-top:34px; position:relative;}
+  .timeline::before{content:""; position:absolute; left:7px; top:12px; bottom:24px; width:2px;
+    background:linear-gradient(180deg,var(--accent),var(--accent2) 40%,var(--line) 100%);}
+  .rel{position:relative; padding-left:34px; margin-bottom:26px; opacity:0; animation:rise .55s cubic-bezier(.2,.7,.3,1) forwards;}
+  .rel::before{content:""; position:absolute; left:0; top:5px; width:16px; height:16px; border-radius:50%;
+    background:var(--surface); border:3px solid var(--accent); box-shadow:0 0 0 4px rgba(217,119,87,.2);}
+  .rel.minor::before{border-color:var(--line); box-shadow:none; width:14px; height:14px; left:1px; top:6px;}
+
+  .rhead{display:flex; align-items:baseline; flex-wrap:wrap; gap:8px 12px; margin-bottom:4px;}
+  .ver{font-family:var(--mono); font-size:18px; font-weight:900; color:var(--accent); letter-spacing:.5px;}
+  .rtitle{font-size:18px; font-weight:900; letter-spacing:.5px; color:var(--ink);}
+  .rdate{font-family:var(--mono); font-size:12px; color:var(--faint); margin-left:auto; font-weight:600;}
+  .latest{font-size:11px; font-weight:800; color:#FFFFFF; background:var(--accent); padding:3px 10px; border-radius:999px; letter-spacing:1px;}
+
+  .card{
+    background:var(--surface); border:2px solid var(--line2); border-radius:18px; padding:18px 18px 8px; margin-top:10px;
+    box-shadow:var(--comic-shadow);
+  }
+  .grp{margin-bottom:14px;}
+  .glabel{display:inline-block; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:3px 10px; border-radius:8px; margin-bottom:9px;}
+  .g-job{color:var(--good); background:#EAF5ED; border:1px solid #A4D4BC;}
+  .g-story{color:var(--accent); background:#FDF3ED; border:1px solid #E8B4A2;}
+  .g-feat{color:var(--gold); background:#FEF8ED; border:1px solid #F3CF98;}
+  .g-fix{color:var(--coral); background:#FDF0EE; border:1px solid #F3A8A0;}
+  ul{list-style:none; margin:0 0 4px; padding:0; display:flex; flex-direction:column; gap:9px;}
+  li{display:flex; gap:10px; font-size:14.5px;}
+  li .em{flex:none; width:22px; text-align:center; font-size:16px; line-height:1.55;}
+  li b{color:var(--ink); font-weight:800;}
+  li .d{color:var(--muted);}
+  .oneline{color:var(--muted); font-size:14px; margin:2px 0 4px;}
+  .oneline b{color:var(--ink);}
+
+  .cta{margin-top:18px; text-align:center; background:var(--surface);
+    border:2px solid var(--line2); border-radius:20px; padding:28px 20px; box-shadow:var(--comic-shadow);}
+  .cta h2{margin:0 0 6px; font-size:20px; font-weight:900; letter-spacing:1px; color:var(--ink);}
+  .cta p{margin:0 0 18px; color:var(--muted); font-size:14px; font-weight:500;}
+  .play{display:inline-block; text-decoration:none; font-weight:900; letter-spacing:1px; font-size:16px;
+    color:#FFFFFF; background:linear-gradient(180deg,var(--accent),#C46343); padding:13px 34px; border-radius:999px;
+    border:2px solid var(--line2); box-shadow:var(--comic-shadow); transition:transform .08s ease, box-shadow .08s ease, filter .2s;}
+  .play:hover{filter:brightness(1.05); transform:translateY(-1px); box-shadow:0 6px 0 var(--line2);}
+  .play:active{transform:translateY(3px); box-shadow:0 1px 0 var(--line2);}
+  .play:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+  .foot{text-align:center; color:var(--faint); font-size:12px; margin-top:24px; line-height:1.8;}
+  .foot a{color:var(--muted); font-weight:700;}
+
+  @keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;}}
+  @media(prefers-reduced-motion:reduce){ *{animation:none!important;} .hero,.stats,.rel{opacity:1!important;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a class="back" href="./">← 回到遊戲</a>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <a href="./about.html" style="text-decoration:none;color:var(--accent2);font-size:13px;font-weight:800;padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);">📖 關於遊戲</a>
+      <a href="./faq.html" style="text-decoration:none;color:var(--accent2);font-size:13px;font-weight:800;padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);">❓ 常見問題 FAQ</a>
+      <span class="navmark">CHANGELOG</span>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">🏝️ 人生不只一條路 &nbsp;<span class="en">LifeHasManyPaths</span></div>
+    <h1>更新公告</h1>
+    <p class="lede">《人生不只一條路》全新出發！在全新 v1.0 中，我們為你準備了更豐富多元的台灣人生旅程 👇</p>
+    <div class="verpill">v1.0 <span class="tag">最新</span></div>
+  </header>
+
+  <section class="stats" aria-label="更新總覽數字">
+    <div class="stat"><b>1條</b><span>跨年齡深度故事線</span></div>
+    <div class="stat"><b>13種</b><span>人生章節挑戰</span></div>
+    <div class="stat"><b>6大</b><span>主動生活類別</span></div>
+    <div class="stat"><b>115項</b><span>成就圖鑑收錄</span></div>
+  </section>
+
+  <main class="timeline">
+
+    <article class="rel" style="animation-delay:.01s">
+      <div class="rhead"><span class="ver">v1.0</span><span class="latest">最新</span><span class="rtitle">全新出發・人生不只一條路</span><span class="rdate">2026-09-05</span></div>
+      <div class="card">
+        <div class="grp">
+          <span class="glabel g-story">全新深度故事線</span>
+          <ul>
+            <li><span class="em"></span><span><b>爸爸鋪好的路：從承諾到夢醒</b><span class="d"> — 出生抽中保險業務家庭的隱藏伏筆。國中成績不錯，卻因深信「畢業就能接家業」而逐漸荒廢學業、沉迷電腦；等到成年畢業，才發現介紹入行與接班是兩回事。</span></span></li>
+            <li><span class="em">🎮</span><span><b>課業落後、儲值與家庭衝突</b><span class="d"> — 遊戲課金扣除手頭現金，也會吃掉珍貴的備考時間。面對父母失望與關係緊繃，能不能負擔補習費考驗著你的財務管理；怪罪家人只會讓心情與親情陷入低谷。</span></span></li>
+            <li><span class="em">📝</span><span><b>國營備考與人生重組</b><span class="d"> — 自修、做題、上課累積備考進度，爭取國營事業穩定上榜與升遷階梯；或提早轉念，透過打工與持續實作累積技能，靠自己的雙手走出下一步。</span></span></li>
+            <li><span class="em">🏆</span><span><b>4 項專屬成就與心路回顧</b><span class="d"> — 接班夢醒、存款變造型、這次真的上榜、自己的下一步；人生結算記錄儲值總額、應試次數與最終人生結局。</span></span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <span class="glabel g-feat">核心玩法・人生章節與主動生活</span>
+          <ul>
+            <li><span class="em">🧭</span><span><b>人生章節挑戰系統</b><span class="d"> — 告別一路狂按下一年！童年、青年、中年到老年，系統會根據當下狀態與志向從 13 種目標抽出限時章節挑戰（進修、成家、存錢、買房、副業、旅行等），完成即可獲得特訓骰。</span></span></li>
+            <li><span class="em">🗂️</span><span><b>六大主動生活分類</b><span class="d"> — 成長、身心、關係、理財、冒險、生活。按分類清楚收納，手機遊玩一目了然，隨時掌握自己能做的事。</span></span></li>
+            <li><span class="em">📚</span><span><b>每年自由專長進修</b><span class="d"> — 突破等待特訓骰的隨機性，每年可主動選一項專長進修，妥善規劃學費與時間，穩健提升個人競爭力。</span></span></li>
+            <li><span class="em">🛠️</span><span><b>副業第二曲線</b><span class="d"> — 下班接案、累積口碑、擴展規模，創造可觀被動收入；面臨過勞抉擇時也能及時喊停或心理休養，平衡生活節奏。</span></span></li>
+            <li><span class="em">🐾</span><span><b>寵物陪伴與身心照顧</b><span class="d"> — 領養米克斯、浪浪貓或長壽烏龜，體驗真實照護、醫療事件與溫暖陪伴；新增心理諮商與定期健康檢查，身心亮紅燈不再束手無策。</span></span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <span class="glabel g-job">多元職涯・台灣在地百態</span>
+          <ul>
+            <li><span class="em">💼</span><span><b>數十條豐富職涯階梯</b><span class="d"> — 竹科工程師、醫師律師、公務員鐵飯碗、傳統農工餐飲、文藝創作、保險業務與房仲代銷，升遷依年資、考績與專業能力逐步晉升。</span></span></li>
+            <li><span class="em">🎥</span><span><b>遊戲實況主與百萬網紅</b><span class="d"> — 從開台小實況主做起，與退役名將過招（Lo傑、單挑S丹Z/D特），接工商業配、締造百萬同接神話，也能親歷口嗨炎上風波。</span></span></li>
+            <li><span class="em">🎀</span><span><b>職業啦啦隊生涯</b><span class="d"> — 經過選拔出道，累積人氣、爭奪球場 C 位女神/男神，面對年齡焦慮後可轉戰演藝、幕後直播或創業，華麗轉身。</span></span></li>
+            <li><span class="em">⚾</span><span><b>職棒球星與職業電競</b><span class="d"> — 選秀入行、征戰大聯盟、經歷低潮或假球誘惑，甚至能靠賣牛肉麵霸氣逆襲；電競選手勇闖世界大賽奪冠與吃青春飯的引退之路。</span></span></li>
+            <li><span class="em">🗳️</span><span><b>政壇風雲與在地政治</b><span class="d"> — 跑攤、里長選戰、議員立委到問鼎總統；歷經高雄市長發大財、收賄 Word 帳本、議場全武行到保外就醫等荒謬時事梗。</span></span></li>
+            <li><span class="em">🔪</span><span><b>黑道江湖與社會走跳</b><span class="d"> — 跑腿小弟、角頭圍事、經營八大行業到上位大哥；體驗江湖險惡、替老大扛罪，或選擇漂白從政與金盆洗手。</span></span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <span class="glabel g-story">在地日常・真實與荒謬並存的人生</span>
+          <ul>
+            <li><span class="em">️</span><span><b>全台 22 縣市投胎</b><span class="d"> — 北北基桃、中彰投、雲嘉南、高屏、宜花東及金馬澎，各自擁有專屬在地標籤、氣候風情與資質加成。</span></span></li>
+            <li><span class="em">💰</span><span><b>全台隨機真實家境</b><span class="d"> — 偏鄉清寒揹負就學貸款、普通家庭踏實打拚、有礦豪門自帶創業金援與跌倒保護傘，過年壓歲錢如實縮放。</span></span></li>
+            <li><span class="em">🎲</span><span><b>天生運氣與投機博弈</b><span class="d"> — 運氣影響投機股票（當沖、航海王、幣圈合約）、大樂透頭獎機率、貴人相助與天災意外頻率。</span></span></li>
+            <li><span class="em">🎣</span><span><b>時事梗生活事件包</b><span class="d"> — 柬埔寨高薪陷阱生還、地下錢莊討債跑路、全額貸買車、半夜牛肉麵、兵役教召與海外流亡、高齡人瑞重陽敬老祝壽等上百個精彩事件。</span></span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <span class="glabel g-feat">系統回顧・圖鑑與分享</span>
+          <ul>
+            <li><span class="em"></span><span><b>115 項豐富成就圖鑑</b><span class="d"> — 涵蓋各行各業巔峰、荒謬社會歷程與隱藏傳奇結局，每局遊戲即時記錄並隨時可開圖鑑回顧。</span></span></li>
+            <li><span class="em">📊</span><span><b>雙走勢曲線與 D～SSS 評級</b><span class="d"> — 結算畫面自動繪製快樂指數與資產走勢雙曲線，全面統整一生所有重大里程碑與社會評價。</span></span></li>
+            <li><span class="em">📸</span><span><b>高畫質長圖一鍵分享</b><span class="d"> — 支援手機與桌機瀏覽器，一鍵生成精美的人生結算履歷長圖，輕鬆分享給好友。</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <section class="cta">
+    <h2>🎮 準備好投胎了嗎？</h2>
+    <p>免下載、免註冊，開網頁就能玩。</p>
+    <a class="play" href="./">立即遊玩 →</a>
+  </section>
+
+  <p class="foot">
+    <a href="./index.html">人生不只一條路 (LifeHasManyPaths)</a> · 
+    <a href="./about.html">關於本遊戲</a> · 
+    <a href="./faq.html">常見問題 FAQ</a> · 
+    v1.0 全新出發 (2026-09-05) ·
+    <a href="https://github.com/twcch/LifeHasManyPaths">GitHub</a><br>
+    事件、人物、情節純屬虛構，僅供娛樂，與真實個人或團體無關。
+  </p>
+
+</div>
+</body>
+</html>

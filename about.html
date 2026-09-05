@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關於本遊戲｜人生不只一條路 LifeHasManyPaths</title>
+<meta name="description" content="《人生不只一條路》（LifeHasManyPaths）是一款免費的線上台灣人生模擬遊戲。你會投胎成一個台灣人，經歷升學、當兵、就業、投資買房到退休，體驗充滿台灣味與時事梗的完整一生。免下載、免註冊，開網頁就能玩。">
+<meta name="keywords" content="人生不只一條路,LifeHasManyPaths,關於遊戲,台灣人生模擬遊戲,遊戲介紹,遊戲機制">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#FAF9F5">
+<link rel="canonical" href="https://twcch.github.io/LifeHasManyPaths/about.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏝️%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="人生不只一條路 LifeHasManyPaths">
+<meta property="og:title" content="關於本遊戲｜人生不只一條路 LifeHasManyPaths">
+<meta property="og:description" content="免費線上台灣人生模擬遊戲！從出生縣市、求學成長、職場升遷到百態人生，體驗台灣在地時事梗與多元人生可能。">
+<meta property="og:url" content="https://twcch.github.io/LifeHasManyPaths/about.html">
+<meta property="og:image" content="https://twcch.github.io/LifeHasManyPaths/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="關於本遊戲｜人生不只一條路 LifeHasManyPaths">
+<meta name="twitter:description" content="免費線上台灣人生模擬遊戲！從出生縣市、求學成長、職場升遷到百態人生，體驗台灣在地時事梗與多元人生可能。">
+<meta name="twitter:image" content="https://twcch.github.io/LifeHasManyPaths/og-image.png">
+<style>
+  :root{
+    --bg2:#FAF9F5;
+    --surface:#FFFFFF; --surface2:#FAF7F2;
+    --line:#E6DEC2; --line2:#2D2721;
+    --ink:#2D2721; --muted:#7A7267; --faint:#A89F93;
+    --accent:#D97757; --accent2:#477669;
+    --gold:#B86221; --coral:#C94B3F; --good:#2E7D5B;
+    --comic-shadow:0 4px 0 #2D2721;
+    --comic-shadow-sm:0 2px 0 #2D2721;
+    --cjk:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; font-family:var(--cjk); color:var(--ink); line-height:1.75;
+    background-color:var(--bg2);
+    background-image:
+      radial-gradient(#E8DFD3 1.2px, transparent 1.2px),
+      radial-gradient(#E8DFD3 1.2px, var(--bg2) 1.2px);
+    background-size:24px 24px;
+    background-position:0 0, 12px 12px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:760px; margin:0 auto; padding:clamp(18px,4vw,40px) clamp(16px,4vw,28px) 72px;}
+
+  .nav{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:8px;}
+  .back{
+    display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:var(--ink); font-size:13px; font-weight:800;
+    padding:8px 16px; border:2px solid var(--line2); border-radius:999px; background:var(--surface);
+    box-shadow:0 3px 0 var(--line2); transition:transform .08s, box-shadow .08s;
+  }
+  .back:hover{transform:translateY(-1px); box-shadow:0 4px 0 var(--line2);}
+  .back:active{transform:translateY(2px); box-shadow:0 1px 0 var(--line2);}
+  .nav-right{display:flex; align-items:center; gap:8px;}
+  .nav-link{
+    text-decoration:none; color:var(--accent2); font-size:13px; font-weight:800;
+    padding:7px 14px; border:1.5px solid var(--line); border-radius:999px; background:var(--surface);
+    transition:all .12s;
+  }
+  .nav-link:hover{border-color:var(--accent2); background:#F2F7F5;}
+  .navmark{font-size:12px; letter-spacing:2px; color:var(--faint); font-family:var(--mono); font-weight:700;}
+
+  .hero{text-align:center; padding:22px 0 10px; opacity:0; animation:rise .6s cubic-bezier(.2,.7,.3,1) forwards;}
+  .eyebrow{font-size:12px; letter-spacing:3px; color:var(--accent); font-weight:800;}
+  .eyebrow .en{color:var(--muted); font-family:var(--mono); letter-spacing:2px;}
+  h1{
+    margin:.28em 0 .12em; font-size:clamp(28px,7vw,42px); font-weight:900; letter-spacing:1.5px; text-wrap:balance;
+    color:var(--ink); text-shadow:1px 2px 0 rgba(217,119,87,.15);
+  }
+  .lede{color:var(--muted); font-size:clamp(14px,3.6vw,16px); margin:0 auto; max-width:38ch; text-wrap:balance; font-weight:500;}
+
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:28px 0 18px;
+    opacity:0; animation:rise .6s .12s cubic-bezier(.2,.7,.3,1) forwards;}
+  .stat{
+    background:var(--surface); border:2px solid var(--line2); border-radius:16px; padding:14px 8px; text-align:center;
+    box-shadow:0 3px 0 var(--line2);
+  }
+  .stat b{display:block; font-family:var(--mono); font-size:clamp(19px,5vw,26px); font-weight:900; color:var(--accent); line-height:1.1;}
+  .stat span{display:block; font-size:11px; color:var(--muted); margin-top:5px; letter-spacing:.5px; font-weight:700;}
+  @media(max-width:480px){ .stats{grid-template-columns:repeat(2,1fr);} }
+
+  .card{
+    background:var(--surface); border:2px solid var(--line2); border-radius:18px; padding:22px 20px 18px; margin-top:16px;
+    box-shadow:var(--comic-shadow);
+  }
+  .card h2{
+    margin:0 0 12px; font-size:18px; font-weight:900; letter-spacing:.8px; color:var(--ink);
+    display:flex; align-items:center; gap:8px;
+  }
+  .card p{margin:0 0 12px; font-size:14.5px; color:var(--ink); line-height:1.75;}
+  .card p:last-child{margin-bottom:0;}
+
+  .feature-list{
+    list-style:none; padding:0; margin:8px 0 0; display:flex; flex-direction:column; gap:12px;
+  }
+  .feature-list li{
+    display:flex; gap:10px; font-size:14px; line-height:1.7;
+  }
+  .feature-list .icon{font-size:18px; flex:none; line-height:1.5;}
+  .feature-list b{color:var(--ink); font-weight:800;}
+  .feature-list span{color:var(--muted);}
+
+  .badge-row{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 4px;}
+  .badge{
+    font-size:12px; font-weight:700; padding:4px 12px; border-radius:999px;
+    background:var(--surface2); border:1.5px solid var(--line); color:var(--muted);
+  }
+
+  .cta{margin-top:24px; text-align:center; background:var(--surface);
+    border:2px solid var(--line2); border-radius:20px; padding:28px 20px; box-shadow:var(--comic-shadow);}
+  .cta h2{margin:0 0 6px; font-size:20px; font-weight:900; letter-spacing:1px; color:var(--ink);}
+  .cta p{margin:0 0 18px; color:var(--muted); font-size:14px; font-weight:500;}
+  .play{display:inline-block; text-decoration:none; font-weight:900; letter-spacing:1px; font-size:16px;
+    color:#FFFFFF; background:linear-gradient(180deg,var(--accent),#C46343); padding:13px 34px; border-radius:999px;
+    border:2px solid var(--line2); box-shadow:var(--comic-shadow); transition:transform .08s ease, box-shadow .08s ease, filter .2s;}
+  .play:hover{filter:brightness(1.05); transform:translateY(-1px); box-shadow:0 6px 0 var(--line2);}
+  .play:active{transform:translateY(3px); box-shadow:0 1px 0 var(--line2);}
+
+  .foot{text-align:center; color:var(--faint); font-size:12px; margin-top:28px; line-height:1.8;}
+  .foot a{color:var(--muted); font-weight:700; text-decoration:underline;}
+
+  @keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="nav">
+    <a class="back" href="./">← 回到遊戲</a>
+    <div class="nav-right">
+      <a class="nav-link" href="./faq.html">❓ 常見問題 FAQ</a>
+      <a class="nav-link" href="./news.html">📢 更新公告</a>
+      <span class="navmark">ABOUT</span>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">🏝️ 人生不只一條路 &nbsp;<span class="en">LifeHasManyPaths</span></div>
+    <h1>關於本遊戲</h1>
+    <p class="lede">投胎台灣、隨機際遇、逐年做出選擇。體驗充滿在地風情與時事梗的完整人生模擬。</p>
+  </header>
+
+  <section class="stats" aria-label="遊戲亮點總覽">
+    <div class="stat"><b>22</b><span>全台縣市風情</span></div>
+    <div class="stat"><b>115項</b><span>豐富成就圖鑑</span></div>
+    <div class="stat"><b>6大</b><span>主動生活面向</span></div>
+    <div class="stat"><b>100%</b><span>免費純前端單機</span></div>
+  </section>
+
+  <main>
+    <!-- 1. 遊戲介紹 -->
+    <article class="card">
+      <h2>📖 遊戲理念與起源</h2>
+      <p><strong>《人生不只一條路》（LifeHasManyPaths）</strong>是一款<strong>免費的線上台灣人生模擬遊戲</strong>。你會投胎成一個台灣人，從 7 歲開始逐年經歷求學升學、兵役體檢、求職就業、投資理財、買房成家、結婚生子、心理養生與晚年退休，一路玩到生命的終點——體驗充滿台灣味、真實感與荒謬時事梗的完整一生。</p>
+      <p>遊戲核心秉持著：<strong>「同一個出生起點，也能因為專長養成、職涯抉擇、財務佈局與臨時事件，走出截然不同的人生軌跡。」</strong>無論是家境清寒靠自己白手起家、有礦豪門跌倒有保護傘，還是歷經挫折後轉念走出第二曲線，每局都能重新投胎，體驗各種不同面向的人生。</p>
+      <div class="badge-row">
+        <span class="badge">純網頁打開即玩</span>
+        <span class="badge">手機直式單手好操作</span>
+        <span class="badge">免註冊無廣告</span>
+        <span class="badge">單機離線可用</span>
+      </div>
+    </article>
+
+    <!-- 2. 核心機制 -->
+    <article class="card">
+      <h2>🎲 核心玩法與機制亮點</h2>
+      <ul class="feature-list">
+        <li>
+          <span class="icon">🎯</span>
+          <div>
+            <b>種子隨機與天生光環：</b>
+            <span>輸入或隨機生成種子碼，家境（清寒、中產、豪門）、天生資質（顏值、智力、體質）與潛力天花板便已底定，每局都是專屬的命運開局。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🎲</span>
+          <div>
+            <b>骰子特訓與專長上限：</b>
+            <span>借鏡養成遊戲核心機制，每項專長天生具備潛力上限。每三年獲得的特訓骰與重大成就獎勵骰，由你親手分配訓練重點，將潛力化為實質實力。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🗂️</span>
+          <div>
+            <b>六大主動生活面向：</b>
+            <span>每年除了隨機事件，均有一次主動生活機會。涵蓋成長進修、身心調適、人際家庭、投資副業、冒險挑戰與日常生活，想當工作狂還是生活大師由你決定。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🧭</span>
+          <div>
+            <b>人生章節挑戰與深度故事：</b>
+            <span>童年、青年、中年到老年，系統依志向觸發限時章節任務；更有「爸爸鋪好的路」等跨年齡層深度事件伏筆，體驗理想與現實的衝突蛻變。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">📊</span>
+          <div>
+            <b>雙曲線走勢與 SSS 結算履歷：</b>
+            <span>臨終自動繪製「快樂指數」與「總資產成長」雙曲線，全面統整一生足跡，並支援一鍵下載長圖分享至社群。</span>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <!-- 3. 台灣在地風情 -->
+    <article class="card">
+      <h2>🇹🇼 台灣在地百態與時事梗</h2>
+      <p>遊戲全面融入台灣在地的地理、文化與時事梗：</p>
+      <ul class="feature-list">
+        <li>
+          <span class="icon">🗺️</span>
+          <div>
+            <b>全台 22 縣市投胎：</b>
+            <span>北北基桃、中彰投、雲嘉南、高屏、宜花東及金馬澎，各自擁有專屬在地標籤、氣候風情與資質加成。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">💼</span>
+          <div>
+            <b>多元在地職涯階梯：</b>
+            <span>竹科工程師、醫師律師、公務員鐵飯碗、傳統農工餐飲、遊戲實況主、職業啦啦隊、職棒球星、政壇風雲到黑道江湖。</span>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🎣</span>
+          <div>
+            <b>時事梗生活事件包：</b>
+            <span>柬埔寨高薪陷阱生還、地下錢莊討債跑路、全額貸買車、半夜牛肉麵、兵役教召與海外流亡、高齡人瑞重陽敬老祝壽等上百個精彩事件。</span>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <!-- 4. 開源與二次開發致謝 -->
+    <article class="card">
+      <h2>🤝 開源與二次開發致謝</h2>
+      <p>本專案<strong>《人生不只一條路》（LifeHasManyPaths）</strong>為開放原始碼專案，基於社群前輩的作品進行二次開發與功能擴充：</p>
+      <ul style="list-style:none; padding:0; margin:8px 0 12px; display:flex; flex-direction:column; gap:8px; font-size:14px;">
+        <li>🌱 <strong>原專案基礎：</strong>基於 <a href="https://github.com/kai890707/Life-TW" target="_blank" rel="noopener noreferrer" style="color:var(--accent2);font-weight:700;text-decoration:underline;">Life-TW (kai890707)</a> 進行深度二次開發。</li>
+        <li>⚾ <strong>概念啟發：</strong>骰子點數分配與專長上限機制，靈感借鏡自棒球人生模擬器（yakyulife）。</li>
+        <li>💻 <strong>本專案原始碼：</strong><a href="https://github.com/twcch/LifeHasManyPaths" target="_blank" rel="noopener noreferrer" style="color:var(--accent2);font-weight:700;text-decoration:underline;">GitHub: twcch/LifeHasManyPaths</a></li>
+      </ul>
+      <p style="font-size:13px; color:var(--muted);">感謝原作者與開源社群的付出，讓台灣人生模擬器擁有更豐富生動的可能性！</p>
+    </article>
+  </main>
+
+  <section class="cta">
+    <h2>🎮 準備好體驗全新人生了嗎？</h2>
+    <p>免下載、免註冊，開網頁就能玩。</p>
+    <a class="play" href="./">立即遊玩 →</a>
+  </section>
+
+  <p class="foot">
+    <a href="./index.html">人生不只一條路 (LifeHasManyPaths)</a> · 
+    <a href="./faq.html">常見問題 FAQ</a> · 
+    <a href="./news.html">更新公告</a> · 
+    <a href="https://github.com/twcch/LifeHasManyPaths">GitHub</a><br>
+    事件、人物、情節純屬虛構，僅供娛樂，與真實個人或團體無關。
+  </p>
+
+</div>
+</body>
+</html>
